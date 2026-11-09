@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #9fd0ff;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav a:hover, nav a:focus { text-decoration: underline; color: #fff; }
+   #theme-btn { margin-left: 16px; }
+
+/* Required CSS State Classes */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode nav a {
+  color: #66b2ff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #07136d;
+}
+
+.hidden {
+  display: none !important;
+}
+
+section {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #cbd8e3;
+}
+
+button,
+select {
+  margin: 6px 4px 6px 0;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  background: #176b87;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0f5268;
+}
+
+/* Accessible focus state */
+button:focus, input:focus, select:focus {
+  outline: 2px solid #0066cc;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.summary-card {
+  padding: 16px;
+  border: 1px solid #360b0b;
+  border-radius: 8px;
+  background: #505b60;
+  text-align: center;
+}
+
+.summary-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.stat {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#dashboardStatus {
+  padding: 10px;
+  border-left: 5px solid #f2b134;
+}
+
+.product-card.highlight {
+  border: 2px solid #f2b134;
+  background: #7a5a10;
+  color: #ffffff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.product-card {
+  padding: 16px;
+  border: 1px solid #360b0b;
+  border-radius: 8px;
+  background: #505b60;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.warning { color: #ff6b6b; }
+.success { color: #6bff95; }

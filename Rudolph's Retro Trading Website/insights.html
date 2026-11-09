@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudolph's Retro Trading - Insights</title>
+  <link rel="stylesheet" href="style.css">
+   <!--defer tells the browser to download script.js 
+  while it parses the HTML, but to run it only after 
+  the whole HTML document has been parsed. -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+  <h1>Rudolph's Retro Trading</h1>
+  <nav>
+      <a href="index.html" >Home</a>
+      <a href="insights.html" class="active">Insights</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button id="theme-btn">Toggle Dark Theme</button>
+  </header>
+
+<main>
+  <section>
+    <h2>Collector Products</h2>
+    <div class="filter-row">
+      <div class="field">
+  <label for="categoryFilter">Category:</label>
+  <select id="categoryFilter">
+    <option value="all" selected>Show All</option>
+    <option value="Books and Media">Books and media</option>
+    <option value="Toys and Games">Toys and games</option>
+    <option value="Fashion and Personal Items">Fashion and personal items</option>
+    <option value="Art and Antiques">Art and antiques</option>
+    <option value="Natural History">Natural history</option>
+    <option value="Technology and Vehicles">Technology and vehicles</option>
+  </select>
+</div>
+      <div class="field">
+        <label for="minimumScore">Minimum score</label>
+          <select id="minimumScore">
+            <option value="1">1 or higher</option>
+            <option value="3">3 or higher</option>
+            <option value="5">5 or higher</option>
+            <option value="7">7 or higher</option>
+            <option value="9">9 or higher</option>
+          </select>
+      </div>
+      <button id="filterButton" type="button">Filter and display</button>
+      <button id="sortButton" type="button" class="secondary">Sort by score</button>
+    </div>
+  </section>
+
+  <section>
+      <h2>Summary</h2>
+      <p id="resultCount">No filter has been applied.</p>
+      <p id="averageScore">Average score: 0.0</p>
+      <div id="productList" class="product-grid"></div>
+    </section>
+
+    <section>
+      <h2>Add a product to the Collection List</h2>
+      <form id="productForm" novalidate>
+        <div class="field">
+          <label for="productName">Product name</label>
+          <input id="productName" type="text" placeholder="e.g. Monocle">
+        </div>
+        <div class="field">
+          <label for="productCategory">Category</label>
+          <select id="productCategory">
+          <option value="Books and Media">Books and media</option>
+          <option value="Toys and Games">Toys and games</option>
+          <option value="Fashion and Personal Items">Fashion and personal items</option>
+          <option value="Art and Antiques">Art and antiques</option>
+          <option value="Natural History">Natural history</option>
+          <option value="Technology and Vehicles">Technology and vehicles</option>
+        </select>
+        </div>
+        <div class="field">
+          <label for="productYear">Year of release</label>
+          <input id="productYear" type="text" placeholder="e.g. 1916">
+        </div>
+        <div class="field">
+          <label for="productScore">Score (1 to 10, 1 being in terrible condition and 10 being best condition)</label>
+          <input id="productScore" type="number" min="1" max="10" step="1" placeholder="1-10">
+        </div>
+        <button type="submit">Add item</button>
+      </form>
+      <p id="formMessage" role="status"></p>
+    </section>
+</main>
+
+<footer><p>© 2026 Rudolph's Retro Trading · Franklyn Okoro, C24494372</p></footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudolph's Retro Trading - Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <!--defer tells the browser to download script.js 
+  while it parses the HTML, but to run it only after 
+  the whole HTML document has been parsed. -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+  <h1>Rudolph's Retro Trading</h1>
+  <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button id="theme-btn">Toggle Dark Theme</button>
+  </header>
+
+  <main>
+    <section>
+  <h2>Collection Dashboard</h2>
+  <p id="dashboardStatus" role="status">Loading collection summary...</p>
+
+  <div class="summary-cards">
+    <article class="summary-card">
+      <h3>Total items</h3>
+      <p id="statTotal" class="stat">0</p>
+    </article>
+    <article class="summary-card">
+      <h3>Categories</h3>
+      <p id="statCategories" class="stat">0</p>
+    </article>
+    <article class="summary-card">
+      <h3>Average score</h3>
+      <p id="statAverage" class="stat">0.0</p>
+    </article>
+    <article class="summary-card">
+      <h3>Top item</h3>
+      <p id="statTop" class="stat">-</p>
+    </article>
+  </div>
+</section>
+    <section>
+      <h2>Welcome To my Trading Website</h2>
+      <label for="nameInput">Enter Your Collector Name:</label>
+      <input id="nameInput" type="text" placeholder="Enter your name">
+      <button id="greetingButton" type="button">Create greeting</button>
+      <button id="alertButton" type="button">Show alert</button>
+      <p id="greetingText" class="message">Enter a name above.</p>
+    </section>
+
+    <section>
+      <p>
+        Welcome to my collection. Here you'll find a growing archive of items I've
+  gathered over the years, each with photos and details about its origin,
+  condition, and story. Browse the full gallery, search for something specific,
+  or filter by category to explore.
+      </p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Rudolph's Retro Trading · Franklyn Okoro, C24494372</p></footer>
+ 
+</body>
+</html>
